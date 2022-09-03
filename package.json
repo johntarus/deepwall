@@ -20,6 +20,7 @@
         "pretty": "prettier --write .",
         "prepare": "husky install",
         "pre-commit": "npm run format && npm run lint && git add -A .",
+        "format": "prettier --write .",
         "format:check": "prettier --check ."
     },
     "eslintConfig": {
