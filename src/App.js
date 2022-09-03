@@ -6,6 +6,7 @@ function App() {
         <div className="App">
             <h1>Hello World</h1>
             <p>testing</p>
+            <p>checking conventional commits</p>
         </div>
     )
 }
