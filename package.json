@@ -18,7 +18,9 @@
         "eject": "react-scripts eject",
         "lint": "eslint --fix",
         "pretty": "prettier --write .",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "pre-commit": "npm run format && npm run lint && git add -A .",
+        "format:check": "prettier --check ."
     },
     "eslintConfig": {
         "extends": [
