@@ -19,5 +19,26 @@ module.exports = {
     plugins: ['react'],
     rules: {
         'react/react-in-jsx-scope': 'off',
+        'type-enum': [
+            2,
+            'always',
+            [
+                'build',
+                'change',
+                'chore',
+                'ci',
+                'deprecate',
+                'docs',
+                'feat',
+                'fix',
+                'perf',
+                'refactor',
+                'remove',
+                'revert',
+                'security',
+                'style',
+                'test',
+            ],
+        ],
     },
 }
