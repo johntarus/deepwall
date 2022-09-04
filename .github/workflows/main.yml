@@ -21,6 +21,18 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: 'npm'
-            - run: npm ci
-        # - run: npm run build --if-present
+            # install dependencies
+            -name: install dependencies
+            -run: npm ci
+            # run eslint
+            -name: run eslint
+            -run: npm run lint
+            # run prettier
+            -name: run prettier
+            -run: npm run prettier
+            # verify that there are no type and build errors
+            -name: run build
+            -run: npm run build
+            -run: npm start &
+                npx wait-on --timeout 40000
         # - run: npm test
