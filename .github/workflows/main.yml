@@ -26,7 +26,7 @@ jobs:
             # run eslint
             - run: npm run lint
             # run prettier
-            - run: npm run prettier
+            - run: npm run format
             # verify that there are no type and build errors
             - run: npm run build
             - run: npm start &
