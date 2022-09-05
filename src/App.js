@@ -1,12 +1,11 @@
 import React from 'react'
 import './App.css'
+import Navigation from './components/Navigation'
 
 function App() {
     return (
         <div className="App">
-            <h1 className="text-red-400">Hello World</h1>
-            <p>testing</p>
-            <p>checking conventional commits</p>
+            <Navigation />
         </div>
     )
 }
