@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.imageContainer {
+    -webkit-animation: action 4s infinite alternate;
+    animation: action 4s infinite alternate;
+}
+
+@-webkit-keyframes action {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes action {
+    0% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
